@@ -1,36 +1,43 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "我"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+### 写点什么
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+欢迎光临，博客名字叫Yanick魔法口袋，Yanick是之前高中课堂要求一个英文名，欣喜若狂又绞尽脑汁，可怜我那英文水准确实不高，转而求助于互联网，终于寻得这个意为上帝微光的谐音昵称，沿用至今。（~~后来发现似乎并无此意，悲~~）
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+至于魔法口袋是我觉着时代呈现的种种太过不可思议，太令人着迷，遂将他们的魔法与我的魔法通通塞进哆啦A梦似的口袋。
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+---
 
-## Tech Stack
+### 感冒的领域（感冒=脑热）
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+- **ComfyUI** 太爱这个工具了，在这里大肆的玩弄AI，在这里写了人生第一个代码：[一个ComfyUI转矢量图插件](https://github.com/Yanick112/ComfyUI-ToSVG)。也欢迎关注我的ComfyUI频道：[Liblib](https://www.liblib.art/userpage/dd5879869d2543acada0f96cd0f24bee/publish/workflow)或者[OpenArt Workflows](https://openart.ai/workflows/profile/yanick?tab=workflows&sort=latest)
+- **装潢设计** 曾经的从业者，掌握这个技能后一直想试试自己想要的，可惜没机会(ˇヘˇ)。
+- **Blender** 陪伴了我6年了，带我尝试了产品设计、场景设计、角色雕刻、几何节点。
+- **VS Code** 超好用的代码编辑器。在这里完成很多轻量代码编写。
+- **Edge** 我心中的大哥大，互联网的入口，在这里获取我人生60%的信息与知识，在这里创造了一个超级超级超级好的AI辅助插件：[Choosejourney](https://microsoftedge.microsoft.com/addons/detail/choosejourney/mfpjhghgmaicdaaljjgiglmmdjoiacga)
+- **文史哲传媒** 中国传媒大学考研四件套，虽然该死的哲学让我惜败，但我仍然爱他们，那段时间是我人生中思考人生最多的时间（~~发呆的日子真好啊~~），有机会和大家分享分享我的思考。
+- **古体诗词** 文史哲传媒唯一现存继承人，是文字的声音在舞蹈，是感情的浓缩后含蓄的爆发。
+- **Arme制造** 危险发言，至今为止制造的最先进的Arme是小时候的弓箭（比弹弓好玩）。
+- **Ntop** 这个工业制造中的有限元优化的软件做的太酷了，在这里尝试了工业零件的结构优化与CMF晶格设计。感受数学的具象。
+- **XR** 虽然Quest3在吃灰，实在是有些些晕。
+- **AUTOMATA** 该死啊，想做的事情怎么这么多。
+- **法语日语** 日语因为曾经二刺螈，法语因为听[不开玩笑](https://www.xiaoyuzhoufm.com/podcast/61791d921989541784257779)说语言相关于性格。迟早有一天会学会他们的(ง'̀-'́)ง。
+- **游戏** 这个太多了，御三家+主机端+移动端=菜鸡本人。首推星界边境&Noita（伟大(´∀｀)♡）。
+- **手办** 爱死这些小人了，特定gk领域，目前打打磨、假假组，有时间了去办个涂装班。
+- **美** 爱所有的美，首要是坚持自己健康的美哈（给自己提个醒）。
+- **共同场域的心之旅** [小鹿Lawrence](https://space.bilibili.com/37029661/)，本来不信的，又信了。
+- **exway** 入手了他们家的电动滑板，可惜没地方玩(ˇヘˇ)，他们又出了电动冲浪板!!梦幻联动，但对于目前的我来说有些些奢侈。
+- **Follow** 24年秋季新品，从此删掉了一堆app。
+- **产品设计** 曾经的从业者，产品思维伴终生（~~哪哪都是钉子~~）。
+- **区块链** 边缘试探中（~~理想很美好，人之初，性本恶。~~）。
+- **徒步与攀岩** 我真的谢谢[Links](https://www.youtube.com/@linksphotograph)，让我本就混乱不堪的感冒好似免疫力失调至半截入土。
+- **故事** 这是我的另一面，我渴望人生的无数美好，可再怎么垫脚也够不到。只好寄托于他人的创作，得幸想象力还算不错，让我有机会无视国度时间世界观，颠覆我的所有，短暂的偷窃。
 
-## Features
+---
 
-Here are certain features of this site.
+### 交朋友
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
-
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+缺搭子吗，我缺(；ω；)，这是我的[邮件地址](lazysheng@163.com)。

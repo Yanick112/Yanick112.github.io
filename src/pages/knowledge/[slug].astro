@@ -1,0 +1,44 @@
+---
+import { type CollectionEntry, getCollection } from "astro:content";
+import Knowledge from "@layouts/Knowledge.astro";
+import PostDetails from "@layouts/PostDetails.astro";
+import slugify from "@utils/slugify";
+import getPageNumbers from "@utils/getPageNumbers";
+
+export interface Props {
+  knowledge: CollectionEntry<"blog">;
+}
+
+export async function getStaticPaths() {
+  const knowledges = await getCollection(
+    "blog",
+    ({ data, id }) => !data.draft && id.startsWith("knowledge/")
+  );
+
+  const knowledgeResult = knowledges.map(knowledge => ({
+    params: { slug: slugify(knowledge.data) },
+    props: { knowledge },
+  }));
+
+  const pagePaths = getPageNumbers(knowledges.length).map(pageNum => ({
+    params: { slug: String(pageNum) },
+  }));
+
+  return [...knowledgeResult, ...pagePaths];
+}
+
+const { knowledge } = Astro.props;
+
+const knowledgeData = await getCollection(
+  "blog",
+  a => a.slug.startsWith("knowledge/") && !a.data.draft
+);
+---
+
+{
+  knowledge ? (
+    <PostDetails post={knowledge} />
+  ) : (
+    <Knowledge knowledgeData={knowledgeData} />
+  )
+}

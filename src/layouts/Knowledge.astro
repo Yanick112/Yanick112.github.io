@@ -1,0 +1,84 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import LinkButton from "@components/LinkButton.astro";
+import slugify from "@utils/slugify";
+import Footer from "@components/Footer.astro";
+import { type CollectionEntry } from "astro:content";
+import Hr from "@components/Hr.astro";
+import dayjs from "dayjs";
+
+export interface Props {
+  knowledgeData: CollectionEntry<"blog">[];
+}
+
+const { knowledgeData } = Astro.props;
+
+// 按标签对知识内容进行分类
+const postsByTag = knowledgeData.reduce(
+  (acc: { [key: string]: CollectionEntry<"blog">[] }, post) => {
+    post.data.tags.forEach((tag: string) => {
+      if (!acc[tag]) acc[tag] = [];
+      acc[tag].push(post);
+    });
+    return acc;
+  },
+  {} as { [key: string]: CollectionEntry<"blog">[] }
+);
+---
+
+<Layout title={`Knowledge | ${SITE.title}`}>
+  <Header activeNav="knowledge" />
+  <Main pageTitle="旅" pageDesc="见闻分享">
+    <div>
+      {
+        Object.keys(postsByTag)
+          .sort()
+          .map(tag => (
+            <div class="pt-0.5">
+              <div class="my-6">
+                <Hr noPadding={true} ariaHidden={true} />
+              </div>
+              <span class="tag-title text-lg font-semibold">{tag}</span>
+              {postsByTag[tag].map(post => (
+                <div>
+                  <div class="mx-0.8 my-4 flex items-center pt-4 font-normal">
+                    <div class="w-24 text-sm text-gray-500">
+                      {dayjs(post.data.pubDatetime).format("YYYY/MM/DD")}
+                    </div>
+                    <LinkButton
+                      className="hover:text-skin-primary text-skin-base"
+                      href={`/knowledge/${slugify(post.data)}`}
+                    >
+                      <p class="collection-title">{post.data.title}</p>
+                    </LinkButton>
+                  </div>
+                </div>
+                <div class="ml-24 italic text-gray-500">
+                  {post.data.description}
+                </div>
+              ))}
+            </div>
+          ))
+      }
+    </div>
+  </Main>
+  <Footer />
+
+  <style>
+    .pagination-wrapper {
+      @apply mb-8 mt-auto flex justify-center;
+    }
+    .disabled {
+      @apply pointer-events-none select-none opacity-50 hover:text-skin-base group-hover:fill-skin-base;
+    }
+    .disabled-svg {
+      @apply group-hover:!fill-skin-base;
+    }
+    .tag-title {
+      @apply my-4 text-lg font-semibold;
+    }
+  </style>
+</Layout>
