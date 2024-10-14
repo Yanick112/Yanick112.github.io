@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AstroPaper 📄
 
 ![AstroPaper](public/astropaper-og.jpg)
@@ -185,3 +186,6 @@ Licensed under the MIT License, Copyright © 2023
 ---
 
 Made with 🤍 by [Sat Naing](https://satnaing.dev) 👨🏻‍💻 and [contributors](https://github.com/satnaing/astro-paper/graphs/contributors).
+=======
+# Yanick112.github.io
+>>>>>>> 80d7ad07ad16bee07ada1b17fdb192cae025dbe5
