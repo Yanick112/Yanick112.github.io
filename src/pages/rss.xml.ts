@@ -25,7 +25,7 @@ export async function GET() {
     .slice(0, 50);
 
   const rssOptions: RSSOptions = {
-    title: SITE.title,
+    title: "Yanick魔法周刊",
     description: SITE.desc,
     site: SITE.website,
     trailingSlash: false,
@@ -49,7 +49,7 @@ export async function GET() {
     customData: `
     <image>
       <url>${SITE.website}${SITE.favicon}</url>
-      <title>${SITE.title}</title>
+      <title>Yanick魔法周刊</title>
       <link>${SITE.website}</link>
     </image>
     <follow_challenge>
