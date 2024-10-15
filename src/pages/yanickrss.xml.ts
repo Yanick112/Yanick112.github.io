@@ -52,10 +52,6 @@ export async function GET() {
       <title>Yanick魔法周刊</title>
       <link>${SITE.website}</link>
     </image>
-    <follow_challenge>
-        <feedId>69025261727522816</feedId>
-        <userId>47967201307251712</userId>
-    </follow_challenge>
     `,
   };
 
