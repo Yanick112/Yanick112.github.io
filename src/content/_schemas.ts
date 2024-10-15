@@ -4,6 +4,7 @@ export const blogSchema = z
   .object({
     author: z.string().optional(),
     pubDatetime: z.date(),
+    modDatetime: z.date().optional(), // 添加此行
     title: z.string(),
     postSlug: z.string().optional(),
     featured: z.boolean().optional(),
@@ -19,5 +20,7 @@ export const blogSchema = z
     badge: z.array(z.string()).optional(),
   })
   .strict();
+
+
 
 export type BlogFrontmatter = z.infer<typeof blogSchema>;

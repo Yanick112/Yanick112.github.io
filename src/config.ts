@@ -8,6 +8,7 @@ export const SITE: Site = {
   ogImage: "https://cdn.midjourney.com/db195e62-ec4c-46f4-ae7b-36b3998da4ad/0_3_640_N.webp?method=shortest",
   lightAndDarkMode: true,
   postPerPage: 999,
+  scheduledPostMargin: 1000 * 60 * 60 * 24 * 7, // 例如，一周的毫秒数
 };
 
 export const LOCALE = ["zh-CN"];
