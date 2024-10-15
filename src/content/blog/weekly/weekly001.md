@@ -1,5 +1,5 @@
 ---
-title: Yanick魔法周刊 第001期
+title: Yanick的周刊 第001期 万物可视化
 pubDatetime: 2024-10-15 08:00:00
 tags:
   - 魔法周刊
@@ -61,6 +61,6 @@ postSlug: weekly001
 
 ### [**冰岛｜穿越55km世界最美徒步路线！北欧兰德曼纳劳卡！哈苏X2D特别版 4K HDR**](https://www.youtube.com/watch?v=PRYyp2A1RBk)
 
-来自Links TV的**徒步**最佳宣传片！！
+来自Links TV的**徒步**最佳宣传片！！也算是种对这项运动的可视化吧hhh
 
 ![截图](https://s21.ax1x.com/2024/10/16/pANF1zj.jpg)
