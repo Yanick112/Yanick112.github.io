@@ -13,14 +13,17 @@ export async function getStaticPaths() {
   // 获取所有 collection 数据
   const collections = await getCollection(
     "blog",
-    ({ data, id }) => !data.draft && id.startsWith("collection/")
+    ({ data, id }: CollectionEntry<"blog">) =>
+      !data.draft && id.startsWith("collection/")
   );
 
   // 生成 collection 页面路径
-  const collectionResult = collections.map(collection => ({
-    params: { slug: slugify(collection.data) },
-    props: { collection },
-  }));
+  const collectionResult = collections.map(
+    (collection: CollectionEntry<"blog">) => ({
+      params: { slug: slugify(collection.data) },
+      props: { collection },
+    })
+  );
 
   // 如果也需要分页路径，则按照 `weekly` 页面的分页逻辑生成分页路径
   const pagePaths = getPageNumbers(collections.length).map(pageNum => ({
@@ -35,7 +38,8 @@ const { collection } = Astro.props;
 
 const collectionData = await getCollection(
   "blog",
-  a => a.slug.startsWith("collection/") && !a.data.draft
+  (a: CollectionEntry<"blog">) =>
+    a.slug.startsWith("collection/") && !a.data.draft
 );
 ---
 

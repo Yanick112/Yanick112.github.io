@@ -12,10 +12,11 @@ export interface Props {
 export async function getStaticPaths() {
   const knowledges = await getCollection(
     "blog",
-    ({ data, id }) => !data.draft && id.startsWith("knowledge/")
+    ({ data, id }: CollectionEntry<"blog">) =>
+      !data.draft && id.startsWith("knowledge/")
   );
-
-  const knowledgeResult = knowledges.map(knowledge => ({
+  
+  const knowledgeResult = knowledges.map((knowledge: CollectionEntry<"blog">) => ({
     params: { slug: slugify(knowledge.data) },
     props: { knowledge },
   }));
@@ -31,7 +32,8 @@ const { knowledge } = Astro.props;
 
 const knowledgeData = await getCollection(
   "blog",
-  a => a.slug.startsWith("knowledge/") && !a.data.draft
+  (a: CollectionEntry<"blog">) =>
+    a.slug.startsWith("knowledge/") && !a.data.draft
 );
 ---
 

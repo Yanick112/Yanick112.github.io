@@ -12,10 +12,11 @@ export interface Props {
 export async function getStaticPaths() {
   const weeklys = await getCollection(
     "blog",
-    ({ data, id }) => !data.draft && id.startsWith("weekly/")
+    ({ data, id }: CollectionEntry<"blog">) =>
+      !data.draft && id.startsWith("weekly/")
   );
 
-  const weeklyResult = weeklys.map(weekly => ({
+  const weeklyResult = weeklys.map((weekly: CollectionEntry<"blog">) => ({
     params: { slug: slugify(weekly.data) },
     props: { weekly },
   }));
@@ -31,7 +32,7 @@ const { weekly } = Astro.props;
 
 const weeknote = await getCollection(
   "blog",
-  a => a.slug.startsWith("weekly/") && !a.data.draft
+  (a: CollectionEntry<"blog">) => a.slug.startsWith("weekly/") && !a.data.draft
 );
 ---
 
