@@ -47,10 +47,10 @@ export async function GET() {
       };
     }),
     customData: `
-    <follow_challenge>
-        <feedId>56969302790438912</feedId>
-        <userId>44596774657862656</userId>
-    </follow_challenge>
+<follow_challenge>
+    <feedId>69025261727522816</feedId>
+    <userId>47967201307251712</userId>
+</follow_challenge>
     `,
   };
 
