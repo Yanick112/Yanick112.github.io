@@ -25,7 +25,7 @@ export async function GET() {
     .slice(0, 50);
 
   const rssOptions: RSSOptions = {
-    title: "Yanick的周刊",
+    title: "Yanick的魔法周刊",
     description: SITE.desc,
     site: SITE.website,
     trailingSlash: false,
@@ -49,9 +49,13 @@ export async function GET() {
     customData: `
     <image>
       <url>${SITE.website}${SITE.favicon}</url>
-      <title>Yanick的周刊</title>
+      <title>Yanick的魔法周刊</title>
       <link>${SITE.website}</link>
     </image>
+    <follow_challenge>
+      <feedId>69134443761654784</feedId>
+      <userId>47967201307251712</userId>
+    </follow_challenge>
     `,
   };
 
