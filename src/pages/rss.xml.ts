@@ -47,6 +47,11 @@ export async function GET() {
       };
     }),
     customData: `
+    <image>
+      <url>${SITE.website}${SITE.favicon}</url>
+      <title>${SITE.title}</title>
+      <link>${SITE.website}</link>
+    </image>
     <follow_challenge>
         <feedId>69025261727522816</feedId>
         <userId>47967201307251712</userId>

@@ -10,7 +10,7 @@ export type SearchItem = {
   description: string;
   data: BlogFrontmatter;
   slug: string;
-  type: "journal" | "article" | "archive" | "record";
+  type: "weekly" | "collection" | "knowledge";
   content: string;
 };
 
@@ -128,16 +128,14 @@ useEffect(() => {
 
   const getPostUrl = (item: SearchItem) => {
     switch (item.type) {
-      case "journal":
-        return `/journals/${slugify(item.data)}`;
-      case "record":
-        return `/records/${slugify(item.data)}`;
-      case "article":
-        return `/posts/${slugify(item.data)}`;
-      case "archive":
-        return `/posts/${slugify(item.data)}`;
+      case "weekly":
+        return `/weekly/${slugify(item.data)}`;
+      case "collection":
+        return `/collection/${slugify(item.data)}`;
+      case "knowledge":
+        return `/knowledge/${slugify(item.data)}`;
       default:
-        return `/posts/${slugify(item.data)}`;
+        return `/weekly/${slugify(item.data)}`;
     }
   };
 

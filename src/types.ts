@@ -8,7 +8,7 @@ export type Site = {
   ogImage: string;
   lightAndDarkMode: boolean;
   postPerPage: number;
-  scheduledPostMargin: number; // 添加此行
+  favicon: string;
 };
 
 

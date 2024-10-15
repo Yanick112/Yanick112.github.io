@@ -1,9 +1,9 @@
 ---
 title: AUTOMATA手记
-pubDatetime: 2023-10-15 00:00:00 +08:00
+pubDatetime: 2018-06-15 07:00:00
 tags:
   - 手记
-description: ""
+description: "自动装置艺术琐碎记录"
 postSlug: AUTOMATA
 ---
 
