@@ -3,7 +3,10 @@ import Weeklys from "@layouts/Weeklys.astro";
 
 import { getCollection } from "astro:content";
 
-const weeknote = await getCollection("blog", a => a.slug.startsWith("weekly/"));
+const weeknote = await getCollection(
+  "blog",
+  a => a.slug.startsWith("weekly/") && !a.data.draft
+);
 ---
 
 <Weeklys weeknote={weeknote} />

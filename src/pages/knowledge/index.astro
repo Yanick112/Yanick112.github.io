@@ -5,7 +5,7 @@ import { getCollection } from "astro:content";
 
 // 获取所有带有标签的博客内容，并按照是否为“知识”进行筛选
 const knowledgeData = await getCollection("blog", a =>
-  a.slug.startsWith("knowledge/")
+  a.slug.startsWith("knowledge/") && !a.data.draft
 );
 ---
 
