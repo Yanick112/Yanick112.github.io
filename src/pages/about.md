@@ -13,7 +13,7 @@ title: "我"
 
 ### 感冒的领域（感冒=脑热）
 
-- **ComfyUI** 太爱这个工具了，在这里大肆的玩弄AI，在这里写了人生第一个代码：[一个ComfyUI转矢量图插件](https://github.com/Yanick112/ComfyUI-ToSVG)。也欢迎关注我的ComfyUI频道：[Liblib](https://www.liblib.art/userpage/dd5879869d2543acada0f96cd0f24bee/publish/workflow)或者[OpenArt Workflows](https://openart.ai/workflows/profile/yanick?tab=workflows&sort=latest)
+- **ComfyUI** 太爱这个工具了，在这里大肆的玩弄AI，在这里写了人生第一个代码：[一个ComfyUI转矢量图插件](https://github.com/Yanick112/ComfyUI-ToSVG)。也欢迎关注我的ComfyUI频道：[Liblib](https://www.liblib.art/userpage/dd5879869d2543acada0f96cd0f24bee/publish/workflow) 或者 [OpenArt Workflows](https://openart.ai/workflows/profile/yanick?tab=workflows&sort=latest)（缓慢更新）。
 - **装潢设计** 曾经的从业者，掌握这个技能后一直想试试自己想要的，可惜没机会(ˇヘˇ)。
 - **Blender** 陪伴了我6年了，带我尝试了产品设计、场景设计、角色雕刻、几何节点。
 - **VS Code** 超好用的代码编辑器。在这里完成很多轻量代码编写。(~~代码真像难懂的女孩子啊~~)
@@ -25,7 +25,7 @@ title: "我"
 - **XR** 虽然Quest3在吃灰，实在是有些些晕，但与众不同的交互与沉浸真的令人神往。
 - **AUTOMATA** 算是对小时候喜欢拆玩具这一爱好的继承hhh。
 - **法语日语** 日语因为曾经二刺螈，法语因为听[不开玩笑](https://www.xiaoyuzhoufm.com/podcast/61791d921989541784257779)说语言相关于性格。迟早有一天会学会他们的(ง'̀-'́)ง。
-- **游戏** 这个太多了，御三家+主机端+移动端=菜鸡本人。首推星界边境&Noita（伟大(´∀｀)♡）。
+- **游戏** 御三家+主机端+移动端=菜鸡本人。首推星界边境&Noita（伟大(´∀｀)♡）。
 - **手办** 爱死这些小人了，特定gk领域，目前打打磨、假假组，有时间了去办个涂装班。
 - **美** 爱所有的美，首要是坚持自己健康的美哈（给自己提个醒）。
 - **共同场域的心之旅** [小鹿Lawrence](https://space.bilibili.com/37029661/)，本来不信的，又信了。
@@ -36,7 +36,7 @@ title: "我"
 - **徒步与攀岩** 我真的谢谢[Links](https://www.youtube.com/@linksphotograph)，让我本就混乱不堪的感冒好似免疫力失调至半截入土。
 - **故事** 这是我的另一面，我渴望人生的无数美好，可再怎么垫脚也够不到。只好寄托于他人的创作，得幸想象力还算不错，让我有机会无视国度时间世界观，颠覆我的所有，短暂的偷窃。
 
-我其实一直在犹豫这些内容应不应该、合不合适展示出来，很多领域不过一时脑热、接触不深，可另外一个角度来看，这也是展现着充盈的好奇心与探索欲，于我自己而言这些体验总是满心欢喜，展示这样真实的自己可能才是我重开博客的原因，那无论是爱慕虚荣孔雀开屏也好、视野狭窄走马观花也罢，正视反思才能不断成长。
+> 我其实一直在犹豫这些内容应不应该、合不合适展示出来，很多领域不过一时脑热、接触不深，可另外一个角度来看，这也是展现着充盈的好奇心与探索欲，于我自己而言这些体验总是满心欢喜，展示这样真实的自己可能才是我重开博客的原因，那无论是爱慕虚荣孔雀开屏也好、视野狭窄走马观花也罢，正视反思才能不断成长。
 
 ### 交个朋友
 
