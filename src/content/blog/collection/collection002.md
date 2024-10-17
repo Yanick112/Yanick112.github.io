@@ -60,5 +60,3 @@ anotherdayu.com [摄影相关RSS](https://app.follow.is/list/60649442771759104)
 暂未知作者 [网络安全资讯](https://app.follow.is/list/65372622031822848)
 
 Makle_Tumbler [计算机科学期刊合集](https://app.follow.is/list/69624039765426176)
-
-capeskychung [游戏开发+游戏分享](https://app.follow.is/list/69592617165828096)
