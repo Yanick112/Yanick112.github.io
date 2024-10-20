@@ -13,11 +13,11 @@ title: "我"
 
 ### 感冒的领域（感冒=脑热）
 
-- **ComfyUI** 太爱这个工具了，在这里大肆的玩弄AI，在这里写了人生第一个代码：[一个ComfyUI转矢量图插件](https://github.com/Yanick112/ComfyUI-ToSVG)。也欢迎关注我的ComfyUI频道：[Liblib](https://www.liblib.art/userpage/dd5879869d2543acada0f96cd0f24bee/publish/workflow) 或者 [OpenArt Workflows](https://openart.ai/workflows/profile/yanick?tab=workflows&sort=latest)（缓慢更新）。
+- **ComfyUI** 太爱这个工具了，在这里大肆的玩弄AI，在这里写了人生第一个代码：一个ComfyUI转矢量图插件|[开源地址](https://github.com/Yanick112/ComfyUI-ToSVG)。也欢迎关注我的ComfyUI频道：[Liblib](https://www.liblib.art/userpage/dd5879869d2543acada0f96cd0f24bee/publish/workflow) 或者 [OpenArt Workflows](https://openart.ai/workflows/profile/yanick?tab=workflows&sort=latest)（缓慢更新）。
 - **装潢设计** 曾经的从业者，掌握这个技能后一直想试试自己想要的，可惜没机会(ˇヘˇ)。
 - **Blender** 陪伴了我6年了，带我尝试了产品设计、场景设计、角色雕刻、几何节点。
 - **VS Code** 超好用的代码编辑器。在这里完成很多轻量代码编写。(~~代码真像难懂的女孩子啊~~)
-- **Edge** 我心中的大哥大，互联网的入口，在这里获取我人生60%的信息与知识，在这里创造了一个超级超级超级好的AI辅助插件：[Choosejourney](https://microsoftedge.microsoft.com/addons/detail/choosejourney/mfpjhghgmaicdaaljjgiglmmdjoiacga)
+- **Edge** 我心中的大哥大，互联网的入口，在这里获取我人生60%的信息与知识，在这里创造了一个超级超级超级好的AI辅助插件：[Choosejourney](https://microsoftedge.microsoft.com/addons/detail/choosejourney/mfpjhghgmaicdaaljjgiglmmdjoiacga)|[开源地址](https://github.com/Yanick112/Choosejourney)
 - **文史哲传媒** 中国传媒大学考研四件套，虽然该死的哲学让我惜败，但我仍然爱他们，那段时间是我人生中思考人生最多的时间（~~发呆的日子真好啊~~），有机会和大家分享分享我的思考。
 - **古体诗词** 文史哲传媒唯一现存继承人，是文字的声音在舞蹈，是感情浓缩后含蓄的爆发。
 - **Arme** 危险发言，至今为止制造的最先进的Arme是小时候的弓箭（比弹弓好玩）。
