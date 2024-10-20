@@ -64,11 +64,13 @@ postSlug: La Casa de Papel
 
 - [梅迪纳塞利公爵宫（马德里）](<https://es.wikipedia.org/wiki/Palacio_de_los_Duques_de_Medinaceli_(Madrid)>)
 
+- [冰宫与汽车宫-Palacio de Hielo y del Automóvil](https://es.wikipedia.org/wiki/Palacio_de_Hielo_y_del_Autom%C3%B3vil)
+
 ### 获取讯息：
 
 - 米格尔·菲萨克（Miguel Fisac）负责改造科学研究扩展委员会( JAE )下 Residencia de Estudiantes（可译为马德里学者交流中心） 的旧礼堂，融合新经验主义与北欧有机主设计新的西班牙国家研究委员会（CSIC）主体建筑（1940 - 至今）。
 
-- 里卡多·费尔南德斯·瓦莱斯平（Ricardo Fernández Vallespín）负责将梅迪纳塞利公爵宫改造为西班牙国家研究委员会（CSIC）下的法律研究所（1940 - 至今）。
+- 里卡多·费尔南德斯·瓦莱斯平（Ricardo Fernández Vallespín）负责将冰宫与汽车宫（Palacio de Hielo y del Automóvil）（梅迪纳塞利公爵宫对面）改造为西班牙国家研究委员会（CSIC）下的法律研究所（1940 - 至今）。
 
 - 科学研究扩展委员会( JAE ) （1910 - 1939）为西班牙国家研究委员会（CSIC）前身。
 
@@ -76,7 +78,7 @@ postSlug: La Casa de Papel
 
 ## **地图示意**
 
-[![pAtrP9f.png](https://s21.ax1x.com/2024/10/15/pAtrP9f.png)](https://imgse.com/i/pAtrP9f)
+![](https://yanick.oss-cn-beijing.aliyuncs.com/img/202410210142231.png)
 
 - 正上❤️：西班牙国家研究委员会（CSIC）总部
 
