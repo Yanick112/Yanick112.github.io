@@ -45,6 +45,8 @@ popy [外媒新闻](https://app.follow.is/list/69260144345565184)、[软件资�
 
 EnderAvaritia [商品推新与降价](https://app.follow.is/list/69329839057512448)
 
+Joshhua [偏数码类的二手交易帖](https://app.follow.is/list/71030986150005760)
+
 ---
 
 ### 信息技术
@@ -84,5 +86,7 @@ Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](http
 4Ark [梗图列表 (Meme)](https://app.follow.is/list/63834202984090624)
 
 yujizmq [国内外家装、水电、DIY相关视频频道](https://app.follow.is/list/70454562637248512)
+
+NongFuMusic [小红书上的漫画家、插画师](https://app.follow.is/list/70391734854711296)
 
 ---
