@@ -67,6 +67,8 @@ Co5mos [网安博客](https://app.follow.is/list/69981927876663296)、[网安资
 
 川和 KK [国外开源情报（osint）博客集合](https://app.follow.is/list/69658736917083136)
 
+haowen [iOS Developer](https://app.follow.is/list/67809261916145664)
+
 ---
 
 ### 知识学习
@@ -74,6 +76,10 @@ Co5mos [网安博客](https://app.follow.is/list/69981927876663296)、[网安资
 duolaxie [YouTube: Top Science & Learning Channels](https://app.follow.is/list/68951237389007872)
 
 anotherdayu.com [摄影相关RSS](https://app.follow.is/list/60649442771759104)
+
+alphardex [前端视觉创意灵感池](https://app.follow.is/list/71373443578249216)
+
+KrisTong17 [学术资源 | XR、HCI、AI领域最新学术论文联合订阅](https://app.follow.is/list/71008340709688320)
 
 ---
 
