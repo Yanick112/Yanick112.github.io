@@ -47,6 +47,8 @@ EnderAvaritia [商品推新与降价](https://app.follow.is/list/693298390575124
 
 Joshhua [偏数码类的二手交易帖](https://app.follow.is/list/71030986150005760)
 
+S7venYoung [纯科技媒体](https://app.follow.is/list/71407654773172224)
+
 ---
 
 ### 信息技术
@@ -94,5 +96,7 @@ Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](http
 yujizmq [国内外家装、水电、DIY相关视频频道](https://app.follow.is/list/70454562637248512)
 
 NongFuMusic [小红书上的漫画家、插画师](https://app.follow.is/list/70391734854711296)
+
+Hta [欣赏好看的房子就是一种享受！！！](https://app.follow.is/list/71434614254530560)
 
 ---
