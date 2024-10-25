@@ -39,13 +39,19 @@ postSlug: collection002
 
 DFobain [公众号合集](https://app.follow.is/list/66414134067656704)与[电报频道合集](https://app.follow.is/list/68315202067588096)
 
-冰燙貳柒 [国内外75家媒体](https://app.follow.is/list/61626177689280512)
-
-popy [外媒新闻](https://app.follow.is/list/69260144345565184)、[软件资源黑科技](https://app.follow.is/list/69187823966363648)
+popy [软件资源黑科技](https://app.follow.is/list/69187823966363648)
 
 EnderAvaritia [商品推新与降价](https://app.follow.is/list/69329839057512448)
 
 Joshhua [偏数码类的二手交易帖](https://app.follow.is/list/71030986150005760)
+
+---
+
+### 媒体新闻
+
+冰燙貳柒 [国内外75家媒体](https://app.follow.is/list/61626177689280512)
+
+popy [外媒新闻](https://app.follow.is/list/69260144345565184)
 
 S7venYoung [纯科技媒体](https://app.follow.is/list/71407654773172224)
 
@@ -59,17 +65,21 @@ an7 [AI 中文推特圈](https://app.follow.is/list/68227244472375296)
 
 Aliang [Telegram机场合集](https://app.follow.is/list/69268287522500608)
 
-liuyun96 [Web3资讯](https://app.follow.is/list/67893356416026624)
-
-暂未知作者 [网络安全资讯](https://app.follow.is/list/65372622031822848)
-
 Makle_Tumbler [计算机科学期刊合集](https://app.follow.is/list/69624039765426176)
-
-Co5mos [网安博客](https://app.follow.is/list/69981927876663296)、[网安资讯](https://app.follow.is/list/69973972149661696)
 
 川和 KK [国外开源情报（osint）博客集合](https://app.follow.is/list/69658736917083136)
 
 haowen [iOS Developer](https://app.follow.is/list/67809261916145664)
+
+`以下网安资讯与WEB3，由于是这方面的小白，所以大家自行甄别`
+
+ghost461 [网络安全研究blog](https://app.follow.is/share/lists/72130896240766976)
+
+Co5mos [网安博客](https://app.follow.is/list/69981927876663296)、[网安资讯](https://app.follow.is/list/69973972149661696)
+
+暂未知作者 [网络安全资讯](https://app.follow.is/list/65372622031822848)
+
+liuyun96 [Web3资讯](https://app.follow.is/list/67893356416026624)
 
 ---
 
