@@ -31,7 +31,7 @@ postSlug: collection002
 
 > 列表精选的原则是尽量针对特定垂直领域，同时较少掺杂整理者的个人喜好。
 
-> 精力有限，难免有疏漏，见谅。
+> 精力有限，难免有疏漏误判，见谅。
 
 ---
 
@@ -44,6 +44,8 @@ popy [软件资源黑科技](https://app.follow.is/list/69187823966363648)
 EnderAvaritia [商品推新与降价](https://app.follow.is/list/69329839057512448)
 
 Joshhua [偏数码类的二手交易帖](https://app.follow.is/list/71030986150005760)
+
+n5eg [数字刊](https://app.follow.is/share/lists/62734573855324160)
 
 ---
 
@@ -87,19 +89,25 @@ liuyun96 [Web3资讯](https://app.follow.is/list/67893356416026624)
 
 duolaxie [YouTube: Top Science & Learning Channels](https://app.follow.is/list/68951237389007872)
 
-anotherdayu.com [摄影相关RSS](https://app.follow.is/list/60649442771759104)
-
-alphardex [前端视觉创意灵感池](https://app.follow.is/list/71373443578249216)
-
 KrisTong17 [学术资源 | XR、HCI、AI领域最新学术论文联合订阅](https://app.follow.is/list/71008340709688320)
 
 ---
 
+### 视觉设计
+
+alphardex [前端视觉创意灵感池](https://app.follow.is/list/71373443578249216)
+
+Hta [欣赏好看的房子就是一种享受！！！](https://app.follow.is/list/71434614254530560)
+
+anotherdayu.com [摄影相关RSS](https://app.follow.is/list/60649442771759104)
+
+[Jackywine 21 Designer List](https://app.follow.is/share/lists/60601711882955776)
+
+HopE 设计类[播客](https://app.follow.is/share/lists/68922531213300736)，[文章](https://app.follow.is/share/lists/65582075953315840)
+
+---
+
 ### 生活娱乐
-
-DIYgod [优选人物肖像](https://app.follow.is/list/60580187699502080)（偏日系的高颜值）
-
-Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](https://app.follow.is/list/66413668645401600)、[Twitter](https://app.follow.is/list/67805406301694976)三重奏
 
 4Ark [梗图列表 (Meme)](https://app.follow.is/list/63834202984090624)
 
@@ -107,8 +115,28 @@ yujizmq [国内外家装、水电、DIY相关视频频道](https://app.follow.is
 
 NongFuMusic [小红书上的漫画家、插画师](https://app.follow.is/list/70391734854711296)
 
-Hta [欣赏好看的房子就是一种享受！！！](https://app.follow.is/list/71434614254530560)
-
 骄傲的小红花 [ins摄影博主](https://app.follow.is/list/68930743777827840)
 
 ---
+
+### 人物肖像
+
+DIYgod [优选人物肖像](https://app.follow.is/list/60580187699502080)（偏日系的高颜值）
+
+Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](https://app.follow.is/list/66413668645401600)、[Twitter](https://app.follow.is/list/67805406301694976)三重奏
+
+neil12 [♥ｃｏｓｐｌａｙｅｒ♥](https://app.follow.is/share/lists/72663967473750016)
+
+## Shawn [遇见美好](https://app.follow.is/share/lists/62011148130171904)
+
+### 繁中内容
+
+CTW [人文社科](https://app.follow.is/share/lists/71896687156275200)
+[電腦資訊](https://app.follow.is/share/lists/72720890043807744)
+[自然科普](https://app.follow.is/share/lists/72720810998833152)
+[旅遊觀光](https://app.follow.is/share/lists/72721022378293248)
+[動漫電玩](https://app.follow.is/share/lists/72720739963613184)
+[娛樂趣聞](https://app.follow.is/share/lists/72720661710970880)
+[日語學習](https://app.follow.is/share/lists/72719752033054720)
+
+stardust [台灣職棒啦啦隊](https://app.follow.is/share/lists/72690163908407296)
