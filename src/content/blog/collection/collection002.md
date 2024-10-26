@@ -129,6 +129,8 @@ neil12 [♥ｃｏｓｐｌａｙｅｒ♥](https://app.follow.is/share/lists/726
 
 Shawn [遇见美好](https://app.follow.is/share/lists/62011148130171904)
 
+---
+
 ### 繁中内容
 
 CTW [人文社科](https://app.follow.is/share/lists/71896687156275200)
@@ -140,3 +142,5 @@ CTW [人文社科](https://app.follow.is/share/lists/71896687156275200)
 [日語學習](https://app.follow.is/share/lists/72719752033054720)
 
 stardust [台灣職棒啦啦隊](https://app.follow.is/share/lists/72690163908407296)
+
+---
