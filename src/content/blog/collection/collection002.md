@@ -127,7 +127,7 @@ Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](http
 
 neil12 [♥ｃｏｓｐｌａｙｅｒ♥](https://app.follow.is/share/lists/72663967473750016)
 
-## Shawn [遇见美好](https://app.follow.is/share/lists/62011148130171904)
+Shawn [遇见美好](https://app.follow.is/share/lists/62011148130171904)
 
 ### 繁中内容
 
