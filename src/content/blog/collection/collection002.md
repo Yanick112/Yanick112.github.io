@@ -93,6 +93,8 @@ duolaxie [YouTube: Top Science & Learning Channels](https://app.follow.is/list/6
 
 KrisTong17 [学术资源 | XR、HCI、AI领域最新学术论文联合订阅](https://app.follow.is/list/71008340709688320)
 
+hylove#0001 [大模型 Prompt提示词学习](https://app.follow.is/share/lists/72906272954788864)
+
 ---
 
 ### 视觉设计
