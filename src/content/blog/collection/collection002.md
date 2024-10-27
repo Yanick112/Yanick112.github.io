@@ -95,6 +95,8 @@ KrisTong17 [学术资源 | XR、HCI、AI领域最新学术论文联合订阅](ht
 
 hylove#0001 [大模型 Prompt提示词学习](https://app.follow.is/share/lists/72906272954788864)
 
+⬆️提示词建议搭配[Choosejourney](https://github.com/Yanick112/Choosejourney)使用
+
 ---
 
 ### 视觉设计
