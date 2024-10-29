@@ -39,7 +39,7 @@ postSlug: collection002
 
 ### 通常资讯
 
-DFobain [公众号合集](https://app.follow.is/list/66414134067656704)与[电报频道合集](https://app.follow.is/list/68315202067588096)
+DFobain [公众号合集](https://app.follow.is/list/66414134067656704)与[电报频道合集](https://app.follow.is/list/68315202067588096)，[多元播客](https://app.follow.is/share/lists/68558762606010368)
 
 popy [软件资源黑科技](https://app.follow.is/list/69187823966363648)
 
@@ -48,6 +48,8 @@ EnderAvaritia [商品推新与降价](https://app.follow.is/list/693298390575124
 Joshhua [偏数码类的二手交易帖](https://app.follow.is/list/71030986150005760)
 
 n5eg [数字刊](https://app.follow.is/share/lists/62734573855324160)
+
+hexer [名校见闻录，生活刊物](https://app.follow.is/share/lists/71013390857225216)
 
 ---
 
@@ -134,6 +136,8 @@ Yong's 的[小红书](https://app.follow.is/list/66008546697676800)、[Ins](http
 neil12 [♥ｃｏｓｐｌａｙｅｒ♥](https://app.follow.is/share/lists/72663967473750016)
 
 Shawn [遇见美好](https://app.follow.is/share/lists/62011148130171904)
+
+dmer [一个 instagram 博主收集，风格偏日系](https://app.follow.is/share/lists/73748823298702336)
 
 ---
 
