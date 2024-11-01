@@ -11,7 +11,7 @@ postSlug: weekly003
 
 > 一些偏门但有意思的东西。
 
-### 1、[中国国家电影局工作公示](https://www.chinafilm.gov.cn/xxgk/gsxx/dybalx/)
+### 001、[中国国家电影局工作公示](https://www.chinafilm.gov.cn/xxgk/gsxx/dybalx/)
 
 关于电影的所有官方公告。甚至在底下还有些官方高质量资料库！
 
@@ -21,7 +21,7 @@ postSlug: weekly003
 
 ---
 
-### 2、[中国国家图书馆·中国国家数字图书馆](http://read.nlc.cn/user/index)
+### 002、[中国国家图书馆·中国国家数字图书馆](http://read.nlc.cn/user/index)
 
 论文图书古籍等等，这个国家队真的不一般。
 
@@ -29,7 +29,7 @@ postSlug: weekly003
 
 ---
 
-### 3、[纪妖（原名知妖）](https://www.cbaigui.com/)
+### 003、[纪妖（原名知妖）](https://www.cbaigui.com/)
 
 关于妖怪的一切。有黑神话妖怪考据！！
 
@@ -37,7 +37,7 @@ postSlug: weekly003
 
 ---
 
-### 4、[观沧海 - 地图分享知识](https://www.ageeye.cn/)
+### 004、[观沧海 - 地图分享知识](https://www.ageeye.cn/)
 
 用地图看世界学历史！
 
