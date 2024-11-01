@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import Datetime from "@components/Datetime";
+import TableOfContents from "@components/TableOfContents.astro";
 import type { CollectionEntry } from "astro:content";
 
 export interface Props {
@@ -10,11 +11,8 @@ export interface Props {
 }
 
 const { post } = Astro.props;
-
-const { title, author, description, ogImage, pubDatetime } =
-  post.data;
-
-const { Content } = await post.render();
+const { title, author, description, ogImage, pubDatetime } = post.data;
+const { Content, headings } = await post.render();
 
 const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
   .href;
@@ -22,32 +20,17 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
 
 <Layout title={title} author={author} description={description} ogImage={ogUrl}>
   <Header />
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
-    <button
-      class="focus-outline mb-2 mt-8 flex hover:opacity-75"
-      onclick="
-      history.back()
-      "
-    >
-      <svg xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
-        ></path>
-      </svg><span>返回</span>
-    </button>
-    
-  </div>
-  <main id="main-content">
+
+  <main id="main-content" class="relative">
     <h1 class="post-title">{title}</h1>
     <Datetime datetime={pubDatetime} size="lg" className="my-2" />
-
-
 
     <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
 
-
+    <!-- 引入 TableOfContents 组件 -->
+    <TableOfContents headings={headings} />
   </main>
 
   <Footer />
@@ -61,5 +44,4 @@ const ogUrl = new URL(ogImage ? ogImage : `${title}.png`, Astro.url.origin)
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;
   }
-
 </style>

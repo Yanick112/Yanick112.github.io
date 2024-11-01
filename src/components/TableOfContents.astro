@@ -1,0 +1,144 @@
+---
+export interface Props {
+  headings: Array<{ slug: string; text: string; depth: number }>;
+}
+
+const { headings } = Astro.props;
+
+// 找到最小的标题等级
+const minDepth = Math.min(...headings.map(heading => heading.depth));
+---
+
+<nav class="toc-nav">
+  <div class="toc-list">
+    {
+      headings.map(heading => (
+        <a
+          href={`#${heading.slug}`}
+          class={`toc-item ${heading.depth === minDepth ? "max-level" : ""}`}
+          data-slug={heading.slug}
+          style={`--level: ${heading.depth - minDepth};`}
+          title={heading.text}
+        >
+          <span class="toc-text">{heading.text}</span>
+        </a>
+      ))
+    }
+  </div>
+</nav>
+
+<style>
+  /* 右侧导航条整体样式 */
+  .toc-nav {
+    position: fixed;
+    right: 16px;
+    top: 20%;
+    transform: translateY(-20%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f9f9f900;
+    padding: 12px;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+  }
+
+  /* 隐藏在小屏幕 */
+  @media (max-width: 640px) {
+    .toc-nav {
+      display: none;
+    }
+  }
+  /* 导航条列表样式 */
+  .toc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: visible; /* 防止波浪线被裁剪 */
+  }
+
+  /* 每个导航项默认样式 */
+  .toc-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    /* 基于最大等级字体为 14px，逐级递减 */
+    font-size: calc(14px - var(--level) * 2px);
+    background-color: #f0f0f0; /* 默认浅灰色背景 */
+    position: relative;
+    overflow: visible; /* 防止波浪线被裁剪 */
+  }
+
+  /* 最大等级标题样式：固定 14px 字体大小，且加粗 */
+  .toc-item.max-level {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* 激活状态下的样式，带下划线且背景色为深灰色 */
+  .toc-item.active {
+    background-color: #555; /* 深灰色背景 */
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px; /* 调整下划线偏移，避免被裁剪 */
+  }
+
+  /* 悬停 toc-list 时去掉所有导航项的背景颜色 */
+  .toc-list:hover .toc-item {
+    background-color: transparent; /* 取消背景色 */
+    color: #333; /* 保持文字颜色 */
+    transform: scale(1.05); /* 添加轻微放大效果 */
+  }
+
+  /* 悬停时显示所有标题文本 */
+  .toc-list:hover .toc-text {
+    display: inline;
+    opacity: 1;
+  }
+
+  /* 默认隐藏标题文字 */
+  .toc-text {
+    margin-left: 8px;
+    display: none;
+    transition: opacity 0.3s ease;
+  }
+</style>
+
+<script>
+  // 页面滚动事件监听
+  document.addEventListener("DOMContentLoaded", () => {
+    const tocItems = document.querySelectorAll(".toc-item");
+    const headingElements = Array.from(tocItems).map(tocItem => {
+      const slug = tocItem.getAttribute("data-slug");
+      return slug ? document.getElementById(slug) : null;
+    });
+
+    function onScroll() {
+      let activeIndex = -1;
+      for (let i = 0; i < headingElements.length; i++) {
+        const heading = headingElements[i];
+        if (heading) {
+          const rect = heading.getBoundingClientRect();
+          if (rect.top <= window.innerHeight * 0.3) {
+            activeIndex = i;
+          } else {
+            break;
+          }
+        }
+      }
+
+      tocItems.forEach((item, index) => {
+        item.classList.toggle("active", index === activeIndex);
+      });
+    }
+
+    document.addEventListener("scroll", onScroll);
+    onScroll();
+  });
+</script>
