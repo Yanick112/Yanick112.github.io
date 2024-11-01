@@ -26,7 +26,20 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
     }
   </div>
 </nav>
-
+<button
+  class="back-to-top"
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+>
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M12 4l-8 8h16l-8-8z" fill="currentColor"></path>
+  </svg>
+</button>
 <style>
   /* 右侧导航条整体样式 */
   .toc-nav {
@@ -43,11 +56,39 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
     border-radius: 8px;
     transition: opacity 0.3s;
   }
+  .back-to-top {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
+    z-index: 200;
+  }
 
-  /* 隐藏在小屏幕 */
+  .back-to-top:hover {
+    transform: scale(1.1);
+  }
+  .back-to-top svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    margin-top: 6px; /* 下移 SVG 图标 2px，根据需要调整 */
+  }
+  /* 小屏幕样式：隐藏目录列表，仅显示回到顶部按钮 */
   @media (max-width: 640px) {
-    .toc-nav {
-      display: none;
+    .toc-list {
+      display: none !important;
     }
   }
   /* 导航条列表样式 */
@@ -60,11 +101,12 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
 
   /* 每个导航项默认样式 */
   .toc-item {
+    min-height: 8px;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #333;
-    padding: 4px 8px;
+    padding: 0px 8px;
     border-radius: 4px;
     /* 基于最大等级字体为 14px，逐级递减 */
     font-size: calc(14px - var(--level) * 1px);
@@ -93,7 +135,6 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
   .toc-list:hover .toc-item {
     background-color: transparent; /* 取消背景色 */
     color: #333; /* 保持文字颜色 */
-    transform: scale(1.05); /* 添加轻微放大效果 */
   }
 
   /* 悬停时显示所有标题文本 */
@@ -105,14 +146,24 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
   /* 默认隐藏标题文字 */
   .toc-text {
     margin-left: 8px;
+    margin-right: 8px;
     display: none;
     transition: opacity 0.3s ease;
+
+    padding-bottom: 8px;
+
+    /* 添加文本截断样式 */
+    max-width: 160px; /* 限制最大宽度，根据需要调整 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
   }
 </style>
 
 <script>
   // 页面滚动事件监听
-  document.addEventListener("DOMContentLoaded", () => {
+  function initializeTOCScrollTracking() {
     const tocItems = document.querySelectorAll(".toc-item");
     const headingElements = Array.from(tocItems).map(tocItem => {
       const slug = tocItem.getAttribute("data-slug");
@@ -140,5 +191,7 @@ const minDepth = Math.min(...headings.map(heading => heading.depth));
 
     document.addEventListener("scroll", onScroll);
     onScroll();
-  });
+  }
+  document.addEventListener("astro:after-swap", initializeTOCScrollTracking);
+  initializeTOCScrollTracking(); // 初始化时调用一次
 </script>
