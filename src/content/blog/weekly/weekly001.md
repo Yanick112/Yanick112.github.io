@@ -7,7 +7,7 @@ description: ""
 postSlug: weekly001
 ---
 
-![封面](https://s21.ax1x.com/2024/10/16/pANFmeP.png)
+![weekly001-2024-11-02-06-29-59](https://yanick.oss-cn-beijing.aliyuncs.com/img/weekly001-2024-11-02-06-29-59.png)
 封面是我半小时昏昏欲睡时调教的Midjourney的个人风格
 大家可以去玩玩：personalize 5hgm178
 
@@ -21,7 +21,7 @@ postSlug: weekly001
 
 ### [**正则表达式可视化**](https://regex-vis.com/)
 
-![截图](https://s21.ax1x.com/2024/10/16/pANFndf.png)
+![weekly001-2024-11-02-06-30-27](https://yanick.oss-cn-beijing.aliyuncs.com/img/weekly001-2024-11-02-06-30-27.png)
 
 最近试了几个正则表达式的工具，这个算是最直观的，不过测试功能没玩懂。
 
@@ -31,7 +31,7 @@ postSlug: weekly001
 
 ### [**JSON可视化**](https://json4u.cn/editor)
 
-![截图](https://s21.ax1x.com/2024/10/16/pANFuo8.png)
+![weekly001-2024-11-02-06-30-49](https://yanick.oss-cn-beijing.aliyuncs.com/img/weekly001-2024-11-02-06-30-49.png)
 
 ### [**本地书签可视化部署**](https://github.com/Pintree-io/pintree)
 
@@ -63,4 +63,4 @@ postSlug: weekly001
 
 来自Links TV的**徒步**最佳宣传片！！也算是种对这项运动的可视化吧hhh
 
-![截图](https://s21.ax1x.com/2024/10/16/pANF1zj.jpg)
+![weekly001-2024-11-02-06-31-39](https://yanick.oss-cn-beijing.aliyuncs.com/img/weekly001-2024-11-02-06-31-39.jpg)
