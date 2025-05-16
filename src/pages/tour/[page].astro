@@ -24,10 +24,10 @@ const { page: pageParam } = Astro.params;
 const pageNum = parseInt(String(pageParam || "1"));
 
 const data = await getPaginatedTweets(pageNum);
+---
 
 <TweetsLayout 
   tweets={data.tweets} 
   currentPage={data.currentPage} 
   totalPages={data.totalPages} 
-/> 
----
+/>
