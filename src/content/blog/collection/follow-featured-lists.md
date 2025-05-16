@@ -3,8 +3,8 @@ title: Follow精选列表
 pubDatetime: 2023-10-17 08:00:00
 tags:
   - 效率
-description: ""
-postSlug: collection002
+description: "号外号外，资讯大合集来了！"
+postSlug: collection/follow-featured-lists
 ---
 
 ## Yanick的列表
@@ -151,6 +151,4 @@ CTW [人文社科](https://app.follow.is/share/lists/71896687156275200)
 [娛樂趣聞](https://app.follow.is/share/lists/72720661710970880)
 [日語學習](https://app.follow.is/share/lists/72719752033054720)
 
-stardust [台灣職棒啦啦隊](https://app.follow.is/share/lists/72690163908407296)
-
----
+stardust [台灣職棒啦啦隊](https://app.follow.is/share/lists/72690163908407296) 

@@ -3,12 +3,10 @@
 import Collections from "@layouts/Collections.astro";
 import { getCollection } from "astro:content";
 
-// 获取所有带有标签的博客内容，并按照是否为“合集”进行筛选
-const collectionData = await getCollection(
-  "blog",
-  a => a.slug.startsWith("collection/") && !a.data.draft
+// 获取所有带有标签的博客内容，并按照是否为"集"进行筛选
+const collectionData = await getCollection("blog", a =>
+  a.slug.startsWith("collection/") && !a.data.draft
 );
 ---
 
-<!-- 将获取的合集数据传递给 Collections 组件 -->
-<Collections collectionData={collectionData} />
+<Collections collectionData={collectionData} /> 

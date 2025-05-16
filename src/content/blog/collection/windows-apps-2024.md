@@ -3,8 +3,8 @@ title: Windows下的百花齐放（2024）
 pubDatetime: 2023-10-17 08:00:00
 tags:
   - 效率
-description: ""
-postSlug: collection001
+description: "记录下Windows中年度好用工具"
+postSlug: collection/windows-apps-2024
 draft: false
 ---
 
@@ -179,4 +179,4 @@ draft: false
 
 > 意为着偶然但必用，是垂类相关的应用。
 
-此类应用多与诸君的工作学习内容相关的工具如剪辑、CAD、图片处理等就不列举了。
+此类应用多与诸君的工作学习内容相关的工具如剪辑、CAD、图片处理等就不列举了。 

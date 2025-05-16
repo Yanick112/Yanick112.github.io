@@ -4,7 +4,7 @@ pubDatetime: 2018-06-15 07:00:00
 tags:
   - 手记
 description: "自动装置艺术琐碎记录"
-postSlug: AUTOMATA
+postSlug: collection/AUTOMATA
 ---
 
 # AUTOMATA

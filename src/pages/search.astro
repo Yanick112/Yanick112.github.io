@@ -18,10 +18,9 @@ const allPosts = await getCollection(
 // 创建搜索列表，保留文章类型信息
 const searchList: SearchItem[] = allPosts.map(
   (post: CollectionEntry<"blog">) => {
-    let type: "weekly" | "collection" | "knowledge";
+    let type: "weekly" | "collection";
     if (post.id.startsWith("weekly/")) type = "weekly";
     else if (post.id.startsWith("collection/")) type = "collection";
-    else if (post.id.startsWith("knowledge/")) type = "knowledge";
     else type = "weekly"; // 默认类型
 
     return {

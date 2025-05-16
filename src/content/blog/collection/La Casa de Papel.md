@@ -4,7 +4,7 @@ pubDatetime: 2021-10-15 23:00:00
 tags:
   - 探索
 description: "纸钞屋第一季银行调查"
-postSlug: La Casa de Papel
+postSlug: collection/La Casa de Papel
 ---
 
 ## **调查背景**

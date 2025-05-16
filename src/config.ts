@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://blog.yanick.cn",
   author: "Yanick",
-  desc: "Yanick's Magic Pocket is my personal blog, featuring three sections: weekly updates, collections, and observations.",
+  desc: "Yanick's Magic Pocket is my personal blog, featuring three sections: weekly updates, collections, and travel records.",
   title: "Yanick魔法口袋",
   ogImage: "https://cdn.midjourney.com/db195e62-ec4c-46f4-ae7b-36b3998da4ad/0_3_640_N.webp?method=shortest",
   lightAndDarkMode: true,

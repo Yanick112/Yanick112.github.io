@@ -4,7 +4,7 @@ pubDatetime: 2023-10-18 08:00:00
 tags:
   - 好物
 description: ""
-postSlug: collection003
+postSlug: collection/annual-good-things-2024
 draft: true
 ---
 
@@ -36,4 +36,4 @@ draft: true
 
 收缩垃圾袋
 
-耳塞
+耳塞 

@@ -1,5 +1,4 @@
 ---
-// 在顶部导入所需的类型
 import { SITE } from "@config";
 import Layout from "@layouts/Layout.astro";
 import Main from "@layouts/Main.astro";
@@ -16,6 +15,8 @@ export interface Props {
 }
 
 const { collectionData } = Astro.props;
+
+// 按标签对集合内容进行分类
 const postsByTag = collectionData.reduce(
   (acc: { [key: string]: CollectionEntry<"blog">[] }, post) => {
     post.data.tags.forEach((tag: string) => {

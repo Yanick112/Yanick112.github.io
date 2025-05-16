@@ -1,0 +1,33 @@
+---
+import TweetsLayout from "../../layouts/Tweets.astro";
+import { getPaginatedTweets, getAllTweets } from "../../utils/getTweets";
+import type { GetStaticPathsResult } from "astro";
+
+export async function getStaticPaths(): Promise<GetStaticPathsResult> {
+  const allTweets = await getAllTweets();
+  const tweetsPerPage = 20;
+  const totalPages = Math.ceil(allTweets.length / tweetsPerPage);
+  
+  if (totalPages === 0) {
+    return [];
+  }
+
+  return Array.from({ length: totalPages }, (_, i) => {
+    const pageNum = i + 1;
+    return {
+      params: { page: pageNum.toString() },
+    };
+  });
+}
+
+const { page: pageParam } = Astro.params;
+const pageNum = parseInt(String(pageParam || "1"));
+
+const data = await getPaginatedTweets(pageNum);
+
+<TweetsLayout 
+  tweets={data.tweets} 
+  currentPage={data.currentPage} 
+  totalPages={data.totalPages} 
+/> 
+---

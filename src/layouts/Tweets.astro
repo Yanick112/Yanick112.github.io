@@ -1,0 +1,87 @@
+---
+import { SITE } from "../config";
+import Layout from "./Layout.astro";
+import Main from "./Main.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Pagination from "../components/Pagination.astro";
+import Hr from "../components/Hr.astro";
+import type { Tweet } from "../utils/getTweets";
+import { formatDate } from "../utils/utils";
+
+export interface Props {
+  tweets: Tweet[];
+  currentPage: number;
+  totalPages: number;
+}
+
+const { tweets, currentPage, totalPages } = Astro.props;
+
+const prevUrl = currentPage > 1 ? `/tour/${currentPage - 1}` : undefined;
+const nextUrl = currentPage < totalPages ? `/tour/${currentPage + 1}` : undefined;
+---
+
+<Layout title={`旅 | ${SITE.title}`}>
+  <Header activeNav="tour" />
+  <Main pageTitle="旅" pageDesc="片段记录">
+    <div class="tweets-container">
+      {tweets && tweets.length > 0 ? (
+        tweets.map((tweet, index) => (
+          <div>
+            {index !== 0 && <Hr noPadding={true} />}
+            <article class="tweet-item" id={tweet.id}>
+              <div class="tweet-metadata">
+                <span class="tweet-date">{formatDate(tweet.date)}</span>
+              </div>
+              <div class="tweet-content" set:html={tweet.html} />
+            </article>
+          </div>
+        ))
+      ) : (
+        <div class="no-tweets">
+          <p>暂无推文记录。</p>
+        </div>
+      )}
+    </div>
+
+    {totalPages > 1 && (
+      <Pagination 
+        currentPage={currentPage} 
+        totalPages={totalPages} 
+        prevUrl={prevUrl || ""}
+        nextUrl={nextUrl || ""}
+      />
+    )}
+  </Main>
+  <Footer />
+</Layout>
+
+<style>
+  .tweets-container {
+    @apply my-8;
+  }
+  
+  .tweet-item {
+    @apply py-5;
+  }
+  
+  .tweet-metadata {
+    @apply mb-3;
+  }
+  
+  .tweet-date {
+    @apply text-gray-500 text-xs;
+  }
+  
+  .tweet-content {
+    @apply prose dark:prose-invert max-w-none;
+  }
+  
+  .tweet-content :global(p) {
+    @apply mb-2;
+  }
+  
+  .no-tweets {
+    @apply text-center py-12 text-skin-base opacity-70;
+  }
+</style> 

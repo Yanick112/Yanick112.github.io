@@ -1,0 +1,14 @@
+---
+import TweetsLayout from "../../layouts/Tweets.astro";
+import { getPaginatedTweets } from "../../utils/getTweets";
+
+
+// 默认显示第一页
+const data = await getPaginatedTweets(1);
+---
+
+<TweetsLayout 
+  tweets={data.tweets} 
+  currentPage={data.currentPage} 
+  totalPages={data.totalPages} 
+/> 
