@@ -34,15 +34,15 @@ const weeklySortedByYear = getSortedPostsByYear(weeknote);
               <span class="year-title text-lg font-semibold">{year}</span>
               {weeklySortedByYear[year].map(weekly => (
                 <div>
-                  <div class="mx-0.8 my-4 flex flex-col sm:flex-row items-start sm:items-center pt-4 font-normal">
-                    <div class="min-w-24 mb-1 sm:mb-0 text-sm text-gray-500">
+                  <div class="mx-0.8 my-4 flex flex-col md:flex-row md:items-center pt-4 font-normal">
+                    <div class="min-w-24 text-sm text-gray-500 mb-2 md:mb-0">
                       {dayjs(weekly.data.pubDatetime).format("YYYY/MM/DD")}
                     </div>
                     <LinkButton
                       className="hover:text-skin-primary text-skin-base"
                       href={`/weekly/${slugify(weekly.data)}`}
                     >
-                      <p class="weeknote-title break-words">{weekly.data.title}</p>
+                      <p class="weeknote-title line-clamp-2 md:line-clamp-1">{weekly.data.title}</p>
                     </LinkButton>
                   </div>
                 </div>
@@ -63,6 +63,12 @@ const weeklySortedByYear = getSortedPostsByYear(weeknote);
     }
     .disabled-svg {
       @apply group-hover:!fill-skin-base;
+    }
+    .year-title {
+      @apply my-4 text-lg font-semibold;
+    }
+    .weeknote-title {
+      @apply break-words hyphens-auto;
     }
   </style>
 </Layout>

@@ -50,21 +50,23 @@ Object.keys(postsByTag).forEach((tag) => {
               </div>
               <span class="tag-title text-lg font-semibold">{tag}</span>
               {postsByTag[tag].map(post => (
-                <div>
-                  <div class="mx-0.8 my-4 flex items-center pt-4 font-normal">
-                    <div class="w-24 text-sm text-gray-500">
+                <div class="collection-item my-6 pb-2 border-b border-gray-100 dark:border-gray-800">
+                  <div class="flex flex-col md:flex-row">
+                    <div class="min-w-24 text-sm text-gray-500">
                       {dayjs(post.data.pubDatetime).format("YYYY/MM")}
                     </div>
-                    <LinkButton
-                      className="hover:text-skin-primary text-skin-base"
-                      href={`/collection/${slugify(post.data)}`}
-                    >
-                      <p class="collection-title">{post.data.title}</p>
-                    </LinkButton>
+                    <div class="flex flex-col space-y-1">
+                      <LinkButton
+                        className="hover:text-skin-primary text-skin-base py-0 no-underline"
+                        href={`/collection/${slugify(post.data)}`}
+                      >
+                        <div class="collection-title-container">
+                          <p class="collection-title line-clamp-2 md:line-clamp-1 mb-1 pb-0">{post.data.title}</p>
+                          <p class="description italic text-gray-300 text-xs mt-1 pt-0 leading-normal">{post.data.description}</p>
+                        </div>
+                      </LinkButton>
+                    </div>
                   </div>
-                </div>
-                <div class="ml-24 italic text-gray-500 text-xs">
-                  {post.data.description}
                 </div>
               ))}
             </div>
@@ -86,6 +88,18 @@ Object.keys(postsByTag).forEach((tag) => {
     }
     .tag-title {
       @apply my-4 text-lg font-semibold;
+    }
+    .collection-title {
+      @apply break-words hyphens-auto font-normal leading-normal;
+    }
+    .collection-item {
+      @apply py-0;
+    }
+    .collection-title-container {
+      @apply flex flex-col space-y-0;
+    }
+    .description {
+      @apply mt-0;
     }
   </style>
 </Layout>
