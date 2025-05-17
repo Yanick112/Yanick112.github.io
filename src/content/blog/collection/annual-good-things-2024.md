@@ -1,6 +1,6 @@
 ---
 title: 2024年度好物
-pubDatetime: 2023-10-18 08:00:00
+pubDatetime: 2023-10
 tags:
   - 好物
 description: ""

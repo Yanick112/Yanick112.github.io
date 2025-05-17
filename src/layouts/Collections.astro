@@ -27,6 +27,13 @@ const postsByTag = collectionData.reduce(
   },
   {} as { [key: string]: CollectionEntry<"blog">[] }
 );
+
+// 对每个标签下的帖子按日期排序（从新到旧）
+Object.keys(postsByTag).forEach((tag) => {
+  postsByTag[tag].sort((a, b) => 
+    new Date(b.data.pubDatetime).getTime() - new Date(a.data.pubDatetime).getTime()
+  );
+});
 ---
 
 <Layout title={`集 | ${SITE.title}`}>
@@ -46,7 +53,7 @@ const postsByTag = collectionData.reduce(
                 <div>
                   <div class="mx-0.8 my-4 flex items-center pt-4 font-normal">
                     <div class="w-24 text-sm text-gray-500">
-                      {dayjs(post.data.pubDatetime).format("YYYY/MM/DD")}
+                      {dayjs(post.data.pubDatetime).format("YYYY/MM")}
                     </div>
                     <LinkButton
                       className="hover:text-skin-primary text-skin-base"
@@ -56,7 +63,7 @@ const postsByTag = collectionData.reduce(
                     </LinkButton>
                   </div>
                 </div>
-                <div class="ml-24 italic text-gray-500">
+                <div class="ml-24 italic text-gray-500 text-xs">
                   {post.data.description}
                 </div>
               ))}

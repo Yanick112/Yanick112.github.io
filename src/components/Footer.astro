@@ -15,10 +15,12 @@ const { noMarginTop = false } = Astro.props;
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
   <div class="footer-wrapper">
-    <Socials centered />
+    <div class="hidden sm:block">
+      <Socials centered />
+    </div>
     <div class="copyright-wrapper">
-      <span>Yanick &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
+      <span class="hidden sm:inline">Yanick &#169; {currentYear}</span>
+      <span class="separator hidden sm:inline">&nbsp;|&nbsp;</span>
       <span>快到口袋来</span>
     </div>
 <!--     <LinkButton href="https://icp.gov.moe/?keyword=20237773">

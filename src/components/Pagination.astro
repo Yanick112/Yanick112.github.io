@@ -14,31 +14,99 @@ const { currentPage, totalPages, prevUrl, nextUrl } = Astro.props;
 
 const prev = currentPage > 1 ? prevUrl : '';
 const next = currentPage < totalPages ? nextUrl : '';
+
+// 生成页码数组
+const getPageNumbers = (current: number, total: number) => {
+  const pageNumbers = [];
+  // 显示的最大页码数
+  const maxDisplayed = 5;
+  
+  if (total <= maxDisplayed) {
+    // 如果总页数少于最大显示数，则显示所有页码
+    for (let i = 1; i <= total; i++) {
+      pageNumbers.push(i);
+    }
+  } else {
+    // 如果总页数大于最大显示数，使用更复杂的逻辑
+    // 始终显示第一页和最后一页
+    // 当前页附近显示一些页码
+    
+    pageNumbers.push(1); // 总是显示第一页
+    
+    let startPage = Math.max(2, current - 1);
+    let endPage = Math.min(total - 1, current + 1);
+    
+    // 确保显示至少3个中间页码
+    if (endPage - startPage < 2) {
+      if (current <= 3) {
+        endPage = Math.min(4, total - 1);
+      } else {
+        startPage = Math.max(2, total - 3);
+      }
+    }
+    
+    // 如果第一页和起始页之间有间隔，显示省略号
+    if (startPage > 2) {
+      pageNumbers.push('...');
+    }
+    
+    // 添加中间页码
+    for (let i = startPage; i <= endPage; i++) {
+      pageNumbers.push(i);
+    }
+    
+    // 如果结束页和最后一页之间有间隔，显示省略号
+    if (endPage < total - 1) {
+      pageNumbers.push('...');
+    }
+    
+    if (total > 1) {
+      pageNumbers.push(total); // 总是显示最后一页
+    }
+  }
+  
+  return pageNumbers;
+};
+
+const pageNumbers = getPageNumbers(currentPage, totalPages);
 ---
 
 <nav class="pagination-wrapper" aria-label="分页导航">
   <div class="pagination-links">
     {
       prev ? (
-        <a href={prev} class="pagination-link" aria-label={`转到第 ${currentPage - 1} 页`}>
-          <span>&laquo; 上一页</span>
+        <a href={prev} class="pagination-link nav-btn" aria-label={`转到第 ${currentPage - 1} 页`}>
+          <span>&laquo;</span>
         </a>
       ) : (
-        <span class="pagination-link disabled">&laquo; 上一页</span>
+        <span class="pagination-link nav-btn disabled">&laquo;</span>
       )
     }
     
-    <span class="current-page">
-      第 {currentPage} 页，共 {totalPages} 页
-    </span>
+    <div class="page-numbers">
+      {pageNumbers.map(pageNum => 
+        pageNum === '...' ? (
+          <span class="pagination-ellipsis">{pageNum}</span>
+        ) : (
+          <a 
+            href={pageNum === currentPage ? "#" : `/tour/${pageNum}`} 
+            class={`pagination-number ${pageNum === currentPage ? "active" : ""}`}
+            aria-label={`转到第 ${pageNum} 页`}
+            aria-current={pageNum === currentPage ? "page" : undefined}
+          >
+            {pageNum}
+          </a>
+        )
+      )}
+    </div>
     
     {
       next ? (
-        <a href={next} class="pagination-link" aria-label={`转到第 ${currentPage + 1} 页`}>
-          <span>下一页 &raquo;</span>
+        <a href={next} class="pagination-link nav-btn" aria-label={`转到第 ${currentPage + 1} 页`}>
+          <span>&raquo;</span>
         </a>
       ) : (
-        <span class="pagination-link disabled">下一页 &raquo;</span>
+        <span class="pagination-link nav-btn disabled">&raquo;</span>
       )
     }
   </div>
@@ -50,18 +118,34 @@ const next = currentPage < totalPages ? nextUrl : '';
   }
   
   .pagination-links {
-    @apply flex gap-4 items-center;
+    @apply flex items-center;
   }
   
   .pagination-link {
-    @apply px-4 py-2 bg-skin-card rounded hover:bg-skin-accent hover:text-skin-inverted transition-colors;
+    @apply px-4 py-2 rounded hover:text-skin-accent transition-colors;
+  }
+  
+  .nav-btn {
+    @apply flex items-center justify-center w-10 h-10 text-lg;
   }
   
   .disabled {
-    @apply opacity-50 cursor-not-allowed hover:bg-skin-card hover:text-skin-base;
+    @apply opacity-50 cursor-not-allowed hover:text-skin-base;
   }
   
-  .current-page {
-    @apply px-4 py-2;
+  .page-numbers {
+    @apply flex items-center mx-2;
+  }
+  
+  .pagination-number {
+    @apply w-8 h-8 mx-1 flex items-center justify-center rounded hover:text-skin-accent transition-colors;
+  }
+  
+  .pagination-number.active {
+    @apply text-skin-accent font-bold;
+  }
+  
+  .pagination-ellipsis {
+    @apply w-8 h-8 mx-1 flex items-center justify-center;
   }
 </style>

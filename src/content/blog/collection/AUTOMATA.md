@@ -1,6 +1,6 @@
 ---
 title: AUTOMATA手记
-pubDatetime: 2018-06-15 07:00:00
+pubDatetime: 2018-06
 tags:
   - 手记
 description: "自动装置艺术琐碎记录"
